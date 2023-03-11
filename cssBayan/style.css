@@ -39,6 +39,9 @@ body {
     height: 20px;
     transition: all 0.15s ease;
 }
+.item-box input:checked ~ .icon img {
+    transform: rotate(45deg);
+}
 .box-content {
     display: none;
     width: 100%;
