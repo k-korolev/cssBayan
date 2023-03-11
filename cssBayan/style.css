@@ -3,11 +3,13 @@ body {
     background: #F5F5EB;
     color: #000000;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 .accordeon {
     display: flex;
-    width: 100%;
+    width: calc(100% - 3rem);
+    margin: 0 1.5rem;
     flex-direction: column;
 }
 .item-box {
@@ -61,7 +63,17 @@ body {
 
 
 @media (min-width: 768px) and (max-width: 1199px) {
-
+    .page-wrapper {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-content img {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -74,5 +86,10 @@ body {
     }
     .accordeon {
         width: 640px;
+        margin: 0;
+    }
+    .box-content img {
+        width: 250px;
+        height: 250px;
     }
 }
