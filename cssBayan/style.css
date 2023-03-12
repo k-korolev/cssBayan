@@ -22,11 +22,16 @@ body {
 }
 .item-box label {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.item-box label .label {
+    display: flex;
     flex-grow: 2;
     height: 3rem;
     justify-content: flex-start;
     align-items: center;
-    cursor: pointer;
 }
 .item-box .icon {
     display: none;
@@ -58,7 +63,10 @@ body {
     align-items: flex-start;
     transition: all 0.15s ease;
 }
-.item-box input:checked ~ .box-content {
+.item-box:hover .box-content {
+    display: flex;
+}
+.item-box input:checked ~ label .box-content {
     display: flex;
 }
 .box-content img {
