@@ -84,6 +84,7 @@ body {
 .box-content img {
     width: auto;
     height: 12.5rem;
+    transition: all 0.15s ease;
 }
 
 
@@ -103,6 +104,12 @@ body {
 @keyframes imgFadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+.item-box input:checked ~ label:active .label {
+    color: #0000AA;
+}
+.item-box input:checked ~ label:active .box-content img {
+    opacity: 0.6;
 }
 
 
